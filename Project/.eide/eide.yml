@@ -1,0 +1,220 @@
+version: "4.1"
+name: Project
+type: ARM
+deviceName: null
+packDir: null
+srcDirs:
+  - Start
+  - StdPeriph_Driver
+virtualFolder:
+  name: <virtual_root>
+  files: []
+  folders:
+    - name: Src
+      files:
+        - path: Src/main.c
+      folders: []
+    - name: ::CMSIS
+      files: []
+      folders: []
+    - name: ::Device
+      files:
+        - path: RTE/Device/STM32F103C8/RTE_Device.h
+        - path: RTE/Device/STM32F103C8/startup_stm32f10x_md.s
+        - path: RTE/Device/STM32F103C8/stm32f10x_conf.h
+        - path: RTE/Device/STM32F103C8/system_stm32f10x.c
+      folders: []
+    - name: Inc
+      files:
+        - path: Inc/Delay.c
+        - path: Inc/Delay.h
+        - path: Inc/main.h
+        - path: Inc/GPIO_Init.h
+        - path: Inc/GPIO_Init.c
+        - path: Inc/GPIO_STM32F10x.c
+        - path: Inc/GPIO_STM32F10x.h
+      folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: bd4f976e6ab1145b5b72c455430cec26
+targets:
+  Target 1:
+    cppPreprocessAttrs:
+      defineList:
+        - USE_STDPERIPH_DRIVER
+      incList:
+        - .cmsis/include
+        - RTE/Device/STM32F103C8
+        - Start
+        - RTE/_Target_1
+        - StdPeriph_Driver/inc
+        - StdPeriph_Driver/src
+        - Inc
+      libList:
+        - StdPeriph_Driver/src
+    excludeList:
+      - <virtual_root>/CMSIS
+    toolchain: AC5
+    toolchainConfigMap:
+      AC5:
+        archExtensions: ""
+        cpuType: Cortex-M3
+        floatingPointHardware: none
+        options:
+          version: 4
+          afterBuildTasks: []
+          asm-compiler: {}
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            CXX_FLAGS: --diag_suppress=1 --diag_suppress=1295
+            C_FLAGS: --diag_suppress=1 --diag_suppress=1295
+            c99-mode: true
+            gnu-extensions: true
+            one-elf-section-per-function: true
+            optimization: level-0
+            warnings: all-warnings
+          global:
+            output-debug-info: enable
+            use-microLIB: false
+          linker:
+            $outputTaskExcludes:
+              - .bin
+            output-format: elf
+            ro-base: "0x08000000"
+            rw-base: "0x20000000"
+            xo-base: ""
+        scatterFilePath: ""
+        storageLayout:
+          RAM:
+            - id: 1
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 3
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 1
+              isChecked: true
+              mem:
+                size: "0x5000"
+                startAddr: "0x20000000"
+              noInit: false
+              tag: IRAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: IRAM
+          ROM:
+            - id: 1
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 3
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 1
+              isChecked: true
+              isStartup: true
+              mem:
+                size: "0x10000"
+                startAddr: "0x8000000"
+              tag: IROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: IROM
+        useCustomScatterFile: false
+      AC6:
+        archExtensions: ""
+        cpuType: Cortex-M3
+        floatingPointHardware: none
+        options:
+          version: 3
+          afterBuildTasks: []
+          asm-compiler:
+            $use: asm-auto
+            misc-controls: ""
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            language-c: c99
+            language-cpp: c++11
+            link-time-optimization: false
+            optimization: level-0
+          global:
+            output-debug-info: enable
+            use-microLIB: false
+          linker:
+            $outputTaskExcludes:
+              - .bin
+            misc-controls: --diag_suppress=L6329
+            output-format: elf
+        scatterFilePath: <YOUR_SCATTER_FILE>.sct
+        storageLayout:
+          RAM:
+            - id: 1
+              isChecked: true
+              mem:
+                size: "0x5000"
+                startAddr: "0x20000000"
+              noInit: false
+              tag: IRAM
+          ROM:
+            - id: 1
+              isChecked: true
+              isStartup: true
+              mem:
+                size: "0x10000"
+                startAddr: "0x08000000"
+              tag: IROM
+        useCustomScatterFile: false
+    uploadConfigMap:
+      JLink:
+        baseAddr: ""
+        bin: ""
+        cpuInfo:
+          cpuName: "null"
+          vendor: "null"
+        otherCmds: ""
+        proType: 1
+        speed: 8000
+      OpenOCD:
+        baseAddr: "0x08000000"
+        bin: ""
+        interface: stlink-v2
+        target: stm32f1x
+    uploader: OpenOCD
