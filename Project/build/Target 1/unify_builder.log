@@ -1,0 +1,36 @@
+[2026-02-12 22:03:57]	[info] incremental build: 29 source files changed
+These source files will be recompiled
+---
+'e:\code\keil\EIDE_code\Project-template\Inc\Delay.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\Inc\GPIO_Init.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\Inc\GPIO_STM32F10x.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\RTE\Device\STM32F103C8\startup_stm32f10x_md.s': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\RTE\Device\STM32F103C8\system_stm32f10x.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\Src\main.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\misc.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_adc.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_bkp.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_can.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_cec.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_crc.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_dac.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_dbgmcu.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_dma.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_exti.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_fsmc.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_gpio.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_i2c.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_iwdg.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_pwr.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_rcc.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_rtc.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_sdio.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_spi.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_tim.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_usart.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\src\stm32f10x_wwdg.c': object (.o) file not exist
+'e:\code\keil\EIDE_code\Project-template\StdPeriph_Driver\templates\stm32f10x_it.c': object (.o) file not exist
+
+[2026-02-12 22:03:58]	[done]
+	build successfully !
+

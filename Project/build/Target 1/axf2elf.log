@@ -1,0 +1,4 @@
+arm-none-eabi-objcopy --update-section ER_IROM1="C:\Users\anan\AppData\Local\Temp\Project_4PGnCBgA.bin"  "e:\code\keil\EIDE_code\Project-template\build\Target 1/Project.axf" "e:\code\keil\EIDE_code\Project-template\build\Target 1/Project.elf"
+
+arm-none-eabi-objcopy: e:\code\keil\EIDE_code\Project-template\build\Target 1/Project.elf: warning: allocated section `RW_IRAM1' not in segment
+
